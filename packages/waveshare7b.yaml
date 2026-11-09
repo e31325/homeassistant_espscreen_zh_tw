@@ -10,7 +10,7 @@ substitutions:
   # writes GITHUB_REF into the screen's own YAML next to the `ref:` of this package (docs/RELEASING.md, "Testing dev").
   GITHUB_REF: "main"
   # FONT_DIR: "https://raw.githubusercontent.com/MaxGramser/homeassistant_espscreen/${GITHUB_REF}/fonts"
-  FONT_DIR: "https://raw.githubusercontent.com/你的GitHub帳號/homeassistant_espscreen_zh_tw/main/fonts"
+  FONT_DIR: "https://raw.githubusercontent.com/e31325/homeassistant_espscreen_zh_tw/main/fonts"
   
 packages:
   core: !include core.yaml
