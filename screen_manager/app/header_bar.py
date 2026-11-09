@@ -123,12 +123,12 @@ ALARM_CLASSES = frozenset(['battery', 'carbon_monoxide', 'gas', 'heat', 'lock', 
 # The letters of a language written in another script, which a screen built in that language carries beside GLYPHS
 # (packages/core.yaml's SCRIPT_GLYPHS_<SCRIPT>, a test keeps the two equal; docs/TRANSLATING.md, "Letters"): its
 # translation file's `_meta.script` names the list.
-SCRIPT_GLYPHS = {'cyrillic': frozenset('АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяЁё№')}
+SCRIPT_GLYPHS = {'cyrillic': frozenset('АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяЁё№'), 'han': frozenset('。「」『』一七三上下不且世並中主之九也了事二五些交京亮人什今他代令以件任但位低住何作你使來例供依便保信修個們候值做停備傳傾價儲元先光克兒入內全兩八公六共其具再出分切列別利到制則前剛劃力加動務勞包化北區十千午半南卡即卻原去參又及反取受口只叫可台史各合同名向否吸命和品員商問啟喚單器嚴四回因國圓圖團土在地址均型域執基報場增壓外多夜大天太失套她好如始委子存學它安完定家容密實寫封將專尋對導小少尚就局展層屬山工己已市布帶常幕平年幹幾序府度座廠廣建式引弱張強形影往待很律後得從復心必志快思性情想意感應成我或戰所扇手才打找技把拉拒拖持指按掃排掛採接控推提換擇據擺攝支收改放政效敗教整數文料斜斯新斷方於旋族日明易星昨是時景暫更書最會月有期未本束東林果查校根格條業極構標模樣機權次止正此步歷段每比毛民氣水求江決沒油治況法活派流海消深清測準溫滑滿濟火為無然照熱燈爭片版物特狀率王現理生產用由界留當發白百的益目直相省看真眼眾知石研確碼礦示社科秒移程種稱積究空窗立第等算管節簾米精系約紅級素細組結絕給統經維網線縣總繁織繼續置美群義習老者而聯聲聽育背能自至與般色花華萬著處號螢行術表被裝裡複西要見規親觀角解觸計訊記設許試話該認誤說調請論講證識議讀變象資質走起越路蹤身車軍較載輯轉辦農近返追送透這通速造連週進運過道達適選還邊那部都酸醒重量金鈕錯鐘鐵長門閉開間關附院除陽隊階際集離難電需青靜非面革韌音響頁項順須預領頭題顏類顯風飛養首馬驗體高麥麼點黨龍！％（），／：；？～')}
 
 def clean_text(text):
     """Text the screen can draw: known glyphs, the letters of its language's own script, accents folded to the base
     letter, at most TEXT_BYTES."""
-    glyphs = LEGACY_GLYPHS if i18n.legacy_screen() else GLYPHS | SCRIPT_GLYPHS.get(i18n.screen_script(), frozenset())
+    glyphs = LEGACY_GLYPHS if i18n.legacy_screen() else GLYPHS | SCRIPT_GLYPHS.get(i18n.screen_script(), frozenset()) | SCRIPT_GLYPHS['han']
     out = []
     for char in unicodedata.normalize('NFC', one_mu(text)):
         if char in glyphs:
