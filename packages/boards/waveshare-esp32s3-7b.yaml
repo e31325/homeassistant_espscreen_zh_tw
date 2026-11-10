@@ -23,6 +23,13 @@ substitutions:
   DEVICE_NAME: "waveshare7b-new"
   DEVICE_FRIENDLY_NAME: "My Waveshare 7B"
 
+  # Waveshare 7B 專用字體大小
+  FONT_HEADLINE_SIZE: "29"
+  FONT_LABEL_SIZE: "21"
+  FONT_SUBLABEL_SIZE: "18"
+  FONT_SUBLABEL_BIG_SIZE: "23"
+
+
   # The glass: the panel's own pixels and its density, 1187 diagonal pixels over 7 inches.
   PANEL_W: "1024"
   PANEL_H: "600"
