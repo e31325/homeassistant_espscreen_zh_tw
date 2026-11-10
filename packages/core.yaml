@@ -982,7 +982,7 @@ font:
     extras:
       - file: "${FONT_DIR}/NotoSansSymbols2-hearts.ttf"
         glyphs: ['♡','♥','❤']
-      - file: "${FONT_DIR}/NotoSansTC-Tessera.ttf"
+      - file: "${FONT_DIR}/NotoSansTC-Tessera.otf"
         glyphs: "${SCRIPT_GLYPHS_HAN}"    
 
   - file: "${FONT_DIR}/Roboto-500.ttf"
@@ -1005,7 +1005,7 @@ font:
     extras:
       - file: "${FONT_DIR}/NotoSansSymbols2-hearts.ttf"
         glyphs: ['♡','♥','❤']
-      - file: "${FONT_DIR}/NotoSansTC-Tessera.ttf"
+      - file: "${FONT_DIR}/NotoSansTC-Tessera.otf"
         #glyphs: "${SCRIPT_GLYPHS}"
         glyphs: "${SCRIPT_GLYPHS_HAN}"
 
@@ -1059,7 +1059,7 @@ font:
     extras:
       - file: "${FONT_DIR}/NotoSansSymbols2-hearts.ttf"
         glyphs: ['♡','♥','❤']
-      - file: "${FONT_DIR}/NotoSansTC-Tessera.ttf"
+      - file: "${FONT_DIR}/NotoSansTC-Tessera.otf"
         #glyphs: "${SCRIPT_GLYPHS}"
         glyphs: "${SCRIPT_GLYPHS_HAN}"
 
@@ -1084,7 +1084,7 @@ font:
     extras:
       - file: "${FONT_DIR}/NotoSansSymbols2-hearts.ttf"
         glyphs: ['♡','♥','❤']
-      - file: "${FONT_DIR}/NotoSansTC-Tessera.ttf"
+      - file: "${FONT_DIR}/NotoSansTC-Tessera.otf"
         #glyphs: "${SCRIPT_GLYPHS}"
 
         glyphs: "${SCRIPT_GLYPHS_HAN}"
@@ -1109,7 +1109,7 @@ font:
     extras:
       - file: "${FONT_DIR}/NotoSansSymbols2-hearts.ttf"
         glyphs: ['♡','♥','❤']
-      - file: "${FONT_DIR}/NotoSansTC-Tessera.ttf"
+      - file: "${FONT_DIR}/NotoSansTC-Tessera.otf"
         #glyphs: "${SCRIPT_GLYPHS}"
         glyphs: "${SCRIPT_GLYPHS_HAN}"
 
